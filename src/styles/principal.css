@@ -127,7 +127,7 @@ ul {
 
 footer {
     height: 3rem;
-    background-color: var(--color-grey-3);
+    background-color: #f1eef7;
     display: flex;
     justify-content: center;
     align-items: center;
