@@ -101,6 +101,10 @@
   border: none;
   color: #ffffff;
 }
+.btn-login-modal:hover {
+  background-color: #6e49a7;
+ 
+}
 
 .flex-bottom-modal-login {
   display: flex;
@@ -117,6 +121,9 @@
 
 .ancora-modal-login {
   font-size: 12px;
+}
+.ancora-modal-login:hover {
+  text-decoration: underline;
 }
 
 .setor-btn {
@@ -143,7 +150,7 @@
 
 .btn-login-header {
   width: 90px;
-  height: 27px;
+  height: 32px;
   border: none;
   background: #ffffff;
   border: 1px solid var(--color-brand-1);
@@ -153,6 +160,11 @@
   border-radius: 16px;
   color: var(--color-brand-1);
   font-weight: 600;
+}
+.btn-login-header:hover {
+  background-color: #6e49a7;
+  color: #ffffff;
+ 
 }
 
 .btn-register-header {
@@ -166,6 +178,9 @@
   line-height: 22px;
   text-align: center;
   color: #ffffff;
+}
+.btn-register-header:hover {
+  background-color: #6e49a7;
 }
 
 .btn-login-dropdown {
@@ -420,6 +435,9 @@
     color: #ffffff;
     margin-top: 10px;
   }
+  .btn-login-modal-a:hover{
+    background-color: #6e49a7;
+  }
   
   .flex-bottom-modal-login-a {
     display: flex;
@@ -436,6 +454,9 @@
   
   .ancora-modal-login-a {
     font-size: 12px;
+  }
+  .ancora-modal-login-a:hover {
+    text-decoration: underline;
   }
 
 .hidden {
@@ -646,6 +667,10 @@
   
   .ancora-modal-login-a {
     font-size: 12px;
+  }
+  .btn-login-modal:hover {
+    background-color: #6e49a7;
+   
   }
 
   .hidden {
