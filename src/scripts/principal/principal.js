@@ -8,6 +8,7 @@ function renderCardsPrincipal(list){
         const h2 = document.createElement('h2')
         const span = document.createElement('span')
         const divBtn = document.createElement('div')
+        const btnAlreadyAdopt = document.createElement('button')
         const btnAdopt = document.createElement('button')
 
         li.classList.add('card-animals')
@@ -19,11 +20,23 @@ function renderCardsPrincipal(list){
         span.innerText = element.pet.species
 
         divBtn.classList.add('div-btn-adopt')
+        btnAlreadyAdopt.classList = 'btn-already-adopt hidden'
+        btnAlreadyAdopt.innerText = 'Adotado'
         btnAdopt.classList.add('btn-adopt')
         btnAdopt.innerText = 'Me adote'
         btnAdopt.id = element.pet.id
 
-        divBtn.appendChild(btnAdopt)
+        btnAdopt.addEventListener('click', () => {
+            btnAlreadyAdopt.classList.remove('hidden')
+            btnAdopt.classList.add('hidden')
+        })
+
+        btnAlreadyAdopt.addEventListener('click', () => {
+            btnAdopt.classList.remove('hidden')
+            btnAlreadyAdopt.classList.add('hidden')
+        })
+
+        divBtn.append(btnAlreadyAdopt,btnAdopt)
         divInformation.append(h2,span)
         
         li.append(img,divInformation,divBtn)

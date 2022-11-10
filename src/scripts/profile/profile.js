@@ -334,6 +334,24 @@ async function readToAdoptPets() {
     renderUserPets(data)
 }
 
+function switchButtonsProfile(){
+  const btnMenu = document.querySelector('#menu')
+  const btnX = document.querySelector('#closeMenu')
+  const divButtons = document.querySelector('#drop-nav')
+
+  btnMenu.addEventListener('click',() => {
+      btnMenu.classList.add('hidden')
+      btnX.classList.remove('hidden')
+      divButtons.classList.remove('desk-buttons')
+  })
+
+  btnX.addEventListener('click',() => {
+      btnMenu.classList.remove('hidden')
+      btnX.classList.add('hidden')
+      divButtons.classList.add('desk-buttons')
+  })
+}
+
 export {
   logoutEvent,
   renderUserInformations,
@@ -342,5 +360,6 @@ export {
   deleteUserEvent,
   registerPetEvent,
   readToAdoptPets,
-  closeModal
+  closeModal,
+  switchButtonsProfile
 }
